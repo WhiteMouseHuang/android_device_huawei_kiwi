@@ -171,6 +171,12 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/signinfolistener|libshim_signinfolistener.so:\
     /system/vendor/lib/libmmcamera_hdr_gb_lib.so|/system/vendor/lib/libmmqjpeg_codec.so
 
+# Treble
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true	
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true	
+PRODUCT_FULL_TREBLE_OVERRIDE := true	
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
 # Vendor Init
 TARGET_INIT_VENDOR_LIB := libinit_kiwi
 
